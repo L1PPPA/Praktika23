@@ -1,0 +1,392 @@
+/* ШРИФТЫ */
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    src: url(../font/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    src: url(../font/Gilroy-Semibold.ttf);
+}
+
+/* ГЛОБАЛЬНЫЕ СЕЛЕКТОРЫ */
+
+body {
+    margin: 0;
+    font-family: 'Gilroy';
+}
+
+p, h1, h2, h6 {
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* ШАПКА */
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 20px 0 20px 0;
+}
+
+.header-logo {
+    font-size: 36px;
+    color: #000000;
+}
+
+header p, header a{
+    font-size: 16px;
+    color: #000000;
+}
+
+header nav form button {
+    padding: 10px;
+    background-color: #00868a;
+    font-size: 16px;
+    font-family: 'Gilroy';
+    color: #ffffff;
+    border: none;
+    transition: .3s;
+}
+
+header nav form button:hover {
+    background-color: #023536;
+    color: #ffffff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header a:hover {
+    color: #00868a;
+}
+
+/* НИЖЕ ШАПКИ */
+
+#header-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 0 30px 0;
+    background-color: #4fbfa5;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#header-bottom a {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#header-bottom form button {
+    padding: 10px;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    color: #000000;
+    border: none;
+    transition: .3s;
+}
+
+#header-bottom form button:hover { 
+    background-color: #00868a;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#header-bottom a:hover {
+    color: #00868a;
+}
+
+/* КОСМЕТЛОГИЯ */
+
+#cosmetology {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #4fbfa5;
+    padding: 0 100px 0 100px;
+    box-sizing: border-box;
+}
+
+.cosmetology-container a {
+    color: #ffffff;
+}
+
+.cosmetology-container {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.cosmetology-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cosmetology-text h1 {
+    font-size: 48px;
+}
+
+.cosmetology-text p {
+    font-size: 14px;
+}
+
+.cosmetology-text form .btn-more {
+    padding: 15px 25px 15px 25px;
+    background-color: #00868a;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    color: #ffffff;
+    border: none;
+    transition: .3s;
+}
+
+.cosmetology-text form .btn-more:hover {
+background-color: #ffffff;
+color: #00868a;
+transition: .3s;
+}
+
+.cosmetology-text form .btn-prev-next {
+    width: 80px;
+    height: 60px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+
+.cosmetology-text .form-btns {
+    margin-left: auto;
+}
+
+.cosmetology-text form .btn-prev-next:hover {
+    color: #00868a;
+    background: #ffffff;
+}
+
+.cosmetology-btns {
+    width: 100%;
+}
+
+.cosmetology-btns .btns-btn {
+    width: 60%;
+    background: #00868a;
+    border: none;
+    height: 80px;
+    color: #ffffff;
+    font-size: 21px;
+}
+
+.cosmetology-btns .btns-btn-2 {
+    width: 20%;
+    background: #4fbfa5;
+    border: none;
+    height: 80px;
+    color: #ffffff;
+    font-size: 21px;
+    margin-left: -4px;
+}
+
+.cosmetology-btns .btns-btn-3 {
+    width: 20%;
+    background: #00868a;
+    border: none;
+    height: 80px;
+    color: #ffffff;
+    font-size: 21px;
+    margin-left: -4px;
+}
+
+/* ПОДВАЛ  */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-top {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(0, 134, 138, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer-top h1 {
+    margin: 100px 0 0 0;
+    font-size: 48px;
+    color: #00868a;
+    text-align: center;
+}
+
+.footer-top-items {
+    position: relative;
+    top: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-top-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top-item-img {
+    height: 230px;
+}
+
+.footer-top-item-img img {
+    width: 300px;
+    height: 230px;
+}
+
+.footer-top-item-block {
+    width: 300px;
+    height: 100px;
+    background-color: #00868a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-top-item-block p {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.footer-top form button {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+}
+
+.footer-top form button:hover {
+    color: #00868a;
+    background: #ffffff;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 860px;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    margin: 0 0 30px 0;
+}
+
+.footer-items {
+    display: flex;
+}
+
+.footer-items-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 200px 0 0;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-item h2 {
+    font-size: 21px;
+    color: #000000;
+}
+
+.footer-item p {
+    font-size: 14px;
+    color: #000000;
+}
+
+.footer-items-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer-item-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-item-2 h6 {
+    color: lightgray;
+    font-size: 11px;
+}
+
+.footer-item-2 h2 {
+    color: #000000;
+    font-size: 21px;
+}
+
+.footer-item-2 button {
+    padding: 15px 25px 15px 25px;
+    background-color: #00868a;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    color: #ffffff;
+    border: none;
+    transition: .3s;
+}
+
+.footer-item-2 button:hover {
+    background-color: #023536;
+    color: #ffffff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* Кнопка наверх */
+.scrollup{
+    z-index: 2198;
+    width: 58px;
+    height: 58px;
+    opacity:0.6;
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    text-indent:-9999px;
+    background: url('../img/button_up.png') no-repeat;
+    }
