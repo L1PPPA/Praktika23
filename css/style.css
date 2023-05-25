@@ -66,7 +66,7 @@ header nav form button {
 }
 
 header nav form button:hover {
-    background-color: #023536;
+    background: linear-gradient(rgb(255, 255, 255), #00868a);
     color: #ffffff;
     transition: .3s;
     cursor: pointer;
@@ -191,6 +191,42 @@ transition: .3s;
     background: #ffffff;
 }
 
+.cosmetology-img{
+    box-shadow: 1em 0 0.6em rgba(21, 20, 20, 0.303);
+}
+
+.brand_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 999;
+  }
+  
+  .enlarged_img {
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .enlarged_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
 .cosmetology-btns {
     width: 100%;
 }
@@ -202,6 +238,17 @@ transition: .3s;
     height: 80px;
     color: #ffffff;
     font-size: 21px;
+    cursor: pointer;
+}
+
+.cosmetology-btns .btns-btn:hover {
+    width: 60%;
+    background: #015f63;
+    border: none;
+    height: 80px;
+    color: #ffffff;
+    font-size: 21px;
+    cursor: pointer;
 }
 
 .cosmetology-btns .btns-btn-2 {
@@ -212,6 +259,18 @@ transition: .3s;
     color: #ffffff;
     font-size: 21px;
     margin-left: -4px;
+    cursor: pointer;
+}
+
+.cosmetology-btns .btns-btn-2:hover {
+    width: 20%;
+    background: #015f63;
+    border: none;
+    height: 80px;
+    color: #ffffff;
+    font-size: 21px;
+    margin-left: -4px;
+    cursor: pointer;
 }
 
 .cosmetology-btns .btns-btn-3 {
@@ -222,6 +281,18 @@ transition: .3s;
     color: #ffffff;
     font-size: 21px;
     margin-left: -4px;
+    cursor: pointer;
+}
+
+.cosmetology-btns .btns-btn-3:hover {
+    width: 20%;
+    background: #015f63;
+    border: none;
+    height: 80px;
+    color: #ffffff;
+    font-size: 21px;
+    margin-left: -4px;
+    cursor: pointer;
 }
 
 /* ПОДВАЛ  */
@@ -329,6 +400,15 @@ footer {
     gap: 20px;
 }
 
+.footer-item a:hover {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #015f63;
+    cursor: pointer;
+}
+
+
 .footer-item h2 {
     font-size: 21px;
     color: #000000;
@@ -390,3 +470,8 @@ footer {
     text-indent:-9999px;
     background: url('../img/button_up.png') no-repeat;
     }
+
+    #advertisement {
+        display: none;
+        z-index: 9999;
+      }
